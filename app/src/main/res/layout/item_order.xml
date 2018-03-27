@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/list_touch_bg"
+              >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/picture_touxiang_nor"
+            android:layout_width="64dp"
+            android:layout_height="64dp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/color_rb_checked_true"
+                    android:textSize="17sp"
+                    android:text="张三三"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:src="@drawable/icon_sms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/icon_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textColor="@color/color_rb_checked_false"
+                android:textSize="14sp"
+                android:text="粤B12345(五菱之光  小面包车）"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="#ffe6e6e6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/icon_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2018-02-02 18:50"
+                android:textColor="@color/color_rb_checked_true"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/icon_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="海乐花园"
+                android:textColor="@color/color_rb_checked_true"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/icon_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="13dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="碧海湾花园"
+                android:textColor="@color/color_rb_checked_true"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40.00元"
+                android:textColor="#ff333333"
+                android:textSize="17dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:padding="12dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/color_rb_checked_false"
+        android:textSize="14sp"
+        android:text="进行中"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_white"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_mine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_touch_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <View
+                android:id="@+id/top_view_menu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+            <ImageView
+                android:id="@+id/nav_header_img"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/picture_my_touxiang"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/nav_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_header_img"
+                android:text="134****7932"
+                android:textColor="@color/color_rb_checked_true"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

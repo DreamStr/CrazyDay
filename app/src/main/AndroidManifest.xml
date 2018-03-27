@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.lanfanxing.goodsapplication"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ui.activity.user.UserMainActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.LoginUserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- &lt;!&ndash; 百度地图相关 &ndash;&gt; -->
+        <!-- <service -->
+        <!-- android:name="com.baidu.location.f" -->
+        <!-- android:enabled="true" -->
+        <!-- android:process=":remote"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.baidu.location.service_v2.2"/> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="4PO2pWpBEP4nldZabryMr9YRUdPPIifr"/>
+
+        <activity android:name=".ui.activity.user.RegisterUserActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.SendAddressActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.AcceptAddressActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.LocationActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.MoneyDetailActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.ConfirmOrderActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.OrtherNeedActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.OrderRmkActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.OrderMapActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.CancelCauseActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.OrderCancelActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.MineInfoActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.InputNickNameActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.ChangePhoneActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.OrderActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.CouponActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.MoreSetActivity">
+        </activity>
+        <activity android:name=".ui.activity.user.AddressActivity">
+        </activity>
+        <activity android:name=".ui.activity.driver.DriverMainActivity">
+        </activity>
+        <activity android:name=".ui.activity.driver.RegisterInfoActivity">
+        </activity>
+        <activity android:name=".ui.activity.driver.RegisterCarInfoActivity">
+        </activity>
+        <activity android:name=".ui.activity.driver.RegisterPictrueInfoActivity">
+        </activity>
+        <activity android:name=".ui.activity.driver.GetOrderActivity">
+        </activity>
+        <activity android:name=".ui.activity.driver.WalletActivity">
+        </activity>
+    </application>
+
+</manifest>

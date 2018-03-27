@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@color/color_title_bar"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/color_rb_checked_true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_title_bar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="back"
+                android:padding="15dp"
+                android:src="@drawable/icon_back_nor"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的钱包"
+                android:textColor="@color/color_rb_checked_true"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/gray_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:background="#ff595959"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前余额(元)"
+                        android:textColor="@color/color_white"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="@color/color_white"
+                            android:textSize="30sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元"
+                            android:textColor="@color/color_white"
+                            android:textSize="18sp"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/shape_btn_bg_coupon"
+                        android:paddingRight="24dp"
+                        android:paddingLeft="24dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="结算到支付宝"
+                        android:textColor="@color/color_rb_checked_true"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="#ff737373"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tab_slid"
+                        style="@style/CustomTabLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabMode="fixed">
+
+                    </android.support.design.widget.TabLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

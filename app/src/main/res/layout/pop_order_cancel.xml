@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <View
+        android:background="@color/gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/icon_deldindan"
+        android:textColor="@color/color_rb_checked_true"
+        android:textSize="15sp"
+        android:padding="15dp"
+        android:text="直接取消"
+        android:background="@drawable/list_touch_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    <View
+        android:background="#ffe6e6e6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/tv_reset"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/icon_chongxinxiadan"
+        android:textColor="@color/color_rb_checked_true"
+        android:textSize="15sp"
+        android:padding="15dp"
+        android:text="重新下单"
+        android:background="@drawable/list_touch_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <View
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</LinearLayout>

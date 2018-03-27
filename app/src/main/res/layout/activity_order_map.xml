@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_title_bar"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/color_title_bar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="back"
+                android:padding="15dp"
+                android:src="@drawable/icon_back_nor"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="派单中"
+                android:textColor="@color/color_rb_checked_true"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_title"
+            android:layout_alignBottom="@+id/tv_title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="取消订单"
+            android:textColor="@color/color_rb_checked_true"
+            android:textSize="14sp"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:orientation="horizontal"
+            android:background="@color/color_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/picture_time"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/shape_map_time"
+                    android:text="00:18"
+                    android:textSize="17sp"
+                    android:textColor="@color/color_rb_checked_true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/color_rb_checked_true"
+                    android:textSize="17sp"
+                    android:text="系统选择司机"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/color_rb_checked_false"
+                    android:textSize="14sp"
+                    android:text="倒计时结束后无应答将优先为您叫车"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:orientation="horizontal"
+            android:background="@color/color_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/picture_touxiang_nor"
+                android:layout_width="64dp"
+                android:layout_height="64dp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/color_rb_checked_true"
+                        android:textSize="17sp"
+                        android:text="张三三"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:src="@drawable/icon_sms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/icon_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/color_rb_checked_false"
+                    android:textSize="14sp"
+                    android:text="粤B12345(五菱之光  小面包车）"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/map_path_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </com.baidu.mapapi.map.MapView>
+        <TextView
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:background="@color/color_white"
+            android:textSize="14sp"
+            android:textColor="#ffbababa"
+            android:text="温馨提示：离开本页面，您可以在订单管理中看到该订单的状态，并进行订单操作。"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>
